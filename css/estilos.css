@@ -1,0 +1,161 @@
+/* Reseteo CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ccd5ae;
+}
+
+/* Menú */
+.menu{
+    background-color: #a3b18a;
+}
+.menu ul{
+    list-style-type: none;
+    display: inline-block;
+}
+.menu ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.imagen_logo{
+    display: inline-block;
+}
+/* Footer*/
+.fondopie{
+    background-color: #344e41;
+} 
+.textopie{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+.fondopie img{
+    padding: 20px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+.whatsapp img{
+    width: 80px;
+}
+/*Main*/
+a{
+    text-decoration: none;
+}
+
+h1{
+    background-image:url(../multimedia/mariposas.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+}
+.subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.parrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    margin: 10px;
+    text-align: justify;
+}
+
+
+.imgPrincipal{
+    padding: 30px;
+    float: left;
+    width: 500px;
+}
+
+.imgSecundaria{
+    padding: 50px;
+    width: 300px;
+    border-radius: 50%;
+    float: right;
+}
+
+.elementos{
+    padding: 50px;
+}
+
+.elementos ul li {
+    list-style-type:none;
+    text-align: center;
+
+}
+
+/* La Finca*/
+.fotos{
+    margin-left: 60px;
+}
+.fotos img{
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+}
+
+.googleMaps{
+    text-align: center;
+}
+
+.tabla{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px #344e41;
+    margin-left: 500px;
+}
+
+.tabla tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+    
+.tabla th, .tabla td{
+    padding: 12px 15px;
+}
+
+.formulario{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0 auto; 
+    width: 350px;
+    padding: 10px;
+}
+input, textarea {
+    padding: 5px; 
+}
+
+label {
+    display: block; 
+    padding: 5px; 
+}
+
