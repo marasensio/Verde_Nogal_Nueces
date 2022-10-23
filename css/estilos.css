@@ -7,6 +7,45 @@
 html{
     background-color: #ccd5ae;
 }
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 500px 1000px 0.1fr;
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "texto  texto"
+    "datos datos"
+    "pie pie";
+}
+.menu{
+    grid-area: header;
+}
+.titulo_principal{
+    grid-area: titulo;
+    width: 100%;
+}
+.intro{
+    grid-area: texto;
+    width: 100%;
+    display: flex;
+}
+.info{
+    grid-area: datos;
+    width: 100%;
+}
+
+
+.footer{
+    grid-area: pie;
+    background-color: #344e41;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+
+}
 
 /* Menú */
 .menu{
@@ -55,17 +94,8 @@ html{
 }
 
 /* Footer*/
-.fondopie{
-    background-color: #344e41;
-} 
-.textopie{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    padding-top: 10px;
-}
-.fondopie img{
+
+.footer img{
     padding: 20px;
 }
 .whatsapp{
@@ -81,7 +111,7 @@ a{
     text-decoration: none;
 }
 
-h1{
+.titulo_principal{
     background-image:url(../multimedia/mariposas.jpg);
     height: 200px;
     background-repeat: no-repeat;
@@ -106,34 +136,81 @@ h1{
     font-size: 20px;
     padding: 30px;
     margin: 10px;
-    text-align: justify;
+    text-align:justify;
 }
 
 
-.imgPrincipal{
+.titulo_principal img{
+    object-fit: cover;
     padding: 30px;
     float: left;
+    width:1fr;
+}
+.imgPrincipal{
+    isplay: flex;
     width: 500px;
+    padding: 30px;
 }
-
 .imgSecundaria{
-    padding: 50px;
+    display: flex;
     width: 300px;
+    float:right;
+    padding: 50px;
     border-radius: 50%;
-    float: right;
 }
-
-.elementos{
+.elemento{
     padding: 50px;
 }
 
-.elementos ul li {
+.elemento ul li {
     list-style-type:none;
     text-align: center;
 
 }
 
 /* La Finca*/
+.contenedor_finca{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 300px 150px 800px 0.1fr;
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "galeria galeria"
+    "datos datos"
+    "mapa mapa"
+    "pie pie";
+}
+.menu{
+    grid-area: header;
+}
+.titulo_principal{
+    grid-area: titulo;
+    width: 100%;
+}
+.fotos{
+    grid-area: galeria;
+    display: flex;
+}
+.info{
+    grid-area: datos;
+    width: 100%;
+}
+.googleMaps{
+    grid-area: mapa;
+}
+
+.footer{
+    grid-area: pie;
+    background-color: #344e41;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
 .fotos{
     margin-left: 60px;
 }
