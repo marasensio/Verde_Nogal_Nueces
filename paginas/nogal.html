@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Nogal</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="../multimedia/logo_VN.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,31 +15,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header class="menu">
-        <div class="imagen_logo"> 
-            <img src="../multimedia/logo_VN.png" alt="Logo de Verde Nogal Nueces" >
-            <div>
-                <nav class="txt_menu"><!-- Menú de navegación -->
-                    <ul>
-                        <li> <a href="../index.html">Inicio</a></li>
-                        <li><a href="../paginas/finca.html"> La Finca </a></li>
-                        <li> <a href="../paginas/nuez.html"> Nueces </a></li>
-                        <li> El Nogal </li>
-                        <li> <a href="../paginas/nogales_mza.html">Nogales en Mendoza</a></li>
-                        <li> <a href="contacto.html">Contacto</a></li>
-
-                    </ul>
-                </nav>
+<body class="container-fluid">
+    <header class=" row menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="../multimedia/logo_VN.png" height="150" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="../paginas/finca.html" class="nav-item nav-link">La Finca</a>
+                        <a href="../paginas/nuez.html" class="nav-item nav-link">Nueces</a>
+                        <a href="#" class="nav-item nav-link active">El Nogal</a>
+                        <a href="../paginas/nogales_mza.html" class="nav-item nav-link">Nogales en Mendoza</a>
+                        <a href="../paginas/contacto.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
-    <main>
-        <h1 class="titulo_principal">El Nogal</h1>
-        <section class="intro">
-            <img src="../multimedia/Nogales.jpeg" alt="Nogales" class="imgPrincipal">
-            <p class="parrafo">El nogal (Juglans regia) es un árbol frutal perteneciente a la familia 
+    <main class="row">
+        <h1 class="titulo_principal col-lg-12 col-md-12 col-sm-12">El Nogal</h1>
+        <section class="intro row">
+            <img src="../multimedia/Nogales.jpeg" alt="Nogales" class="imgPrincipal col-lg-4 col-mg-4 col-sm-12">
+            <p class="parrafo col-lg-7 col-mg-7 col-sm-12">El nogal (Juglans regia) es un árbol frutal perteneciente a la familia 
             de las yuglandáceas y originario de Persia. Este árbol se expandió hacia Gregia y después 
             hacia Italia y el resto de países europeos, siendo las especies cultivadas oficiales 
             las siguientes: nogal europeo, nogal ceniciento, nogal negro y nogal de California.
@@ -48,30 +55,53 @@
             para cultivar un nogal diremos que es un árbol muy neutro y flexible en este sentido 
             aunque los suelos preferidos por este árbol son los suelos profundos y sueltos</p>
         </section>
-        <section class="info">
-            <img src="../multimedia/caracteristicas-del-nogal.jpg" alt="Flor del nogal" class="imgSecundaria">
-            <p class="parrafo">El nogal es un árbol caducifolio muy alto que puede llegar a los 27 metros de altura y dispone de un tronco con, 
+        <section class="info row">
+            <img src="../multimedia/caracteristicas-del-nogal.jpg" alt="Flor del nogal" class="imgSecundaria col-lg-4 col-mg-4 col-sm-12">
+            <p class="parrafo col-lg-7 col-mg-7 col-sm-12">El nogal es un árbol caducifolio muy alto que puede llegar a los 27 metros de altura y dispone de un tronco con, 
             nada más y nada menos que, 2 metros de diámetro, aunque se han encontrado algunos ejemplares de 5 metros de diámetro. Se trata de
             un tronco resistente de un color que se torna grisáceo y a partir del cual crecen las abundantes y vigorosas ramas que formarán 
             una copa redondeada enorme y que tienen un color rojizo cuando todavía son jóvenes, para después pasar a convertirse en un color pardo.
             Las ramas del nogal están repletas de hojas enormes de hasta 35 cm de longitud. Las ramas jóvenes son gruesas y con nudos, con la médula 
             típicamente vacía y dividida mediante separadores transversales.</p>
             
-            <p class="parrafo">El nogal pierde las hojas en invierno y en primavera le vuelven a salir a la vez que las flores, de las que hay 
+            <p class="parrafo col-lg-12 col-mg-12 col-sm-12">El nogal pierde las hojas en invierno y en primavera le vuelven a salir a la vez que las flores, de las que hay 
             masculinas y femeninas, siendo las primeras las que albergan el mayor número de flores. Cada flor femenina, presenta un ovario que es ya
             una nuez pequeña donde el extremo superior está el cáliz y del medio salen dos cuernos que son los estigmas (la flor corona el fruto). 
             Las masculinas salen del leño del año anterior por debajo de las femeninas en forma de ramilletes. La flor masculina es un amento. Se poliniza por el viento.</p>
         </section>
     </main>
-    <footer class="footer">
-        <p>Copyright © 2022 Verde Nogal Nueces </p>
-        <img src="../multimedia/002-facebook.png" alt="Facebook">
-        <img src="../multimedia/003-correo.png" alt="E-mail">
-        <div class="whatsapp">
-            <a href="https://www.whatsapp.com/?lang=es">
-            <img src="../multimedia/001-whatsapp.png" alt="whatsapp">
-            </a>
+    <footer class="footer row">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a href="#" class="fa fa-facebook fa-2x fa-lg"></a>
+      
+            <!-- Google -->
+            <a href="#!" class="fa fa-google fa-2x fa-lg"></a>
+      
+            <!-- Instagram -->
+            <a href="#!" class="fa fa-instagram fa-2x fa-lg"></a>
+        </section>
+        <!-- Section: Social media -->
         </div>
-    </footer>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            Copyright © 2022 Verde Nogal Nueces
+        </div>
+        <!-- Copyright -->
+    
+</footer>
+<div class="whatsapp">
+    <a href="https://www.whatsapp.com/?lang=es">
+        <img src="../multimedia/001-whatsapp.png" alt="whatsapp">
+    </a>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

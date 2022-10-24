@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="../multimedia/logo_VN.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,64 +15,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header class="menu">
-        <div class="imagen_logo"> 
-            <img src="../multimedia/logo_VN.png" alt="Logo de Verde Nogal Nueces" >
-            <div>
-                <nav class="txt_menu"><!-- Menú de navegación -->
-                    <ul>
-                        <li> <a href="../index.html">Inicio</a></li>
-                        <li><a href="../paginas/finca.html"> La Finca </a></li>
-                        <li> <a href="../paginas/nuez.html"> Nueces </a></li>
-                        <li> <a href="../paginas/nogal.html">El Nogal </a></li>
-                        <li> <a href="../paginas/nogales_mza.html">Nogales en Mendoza</a></li>
-                        <li> Contacto </li>
-
-                    </ul>
-                </nav>
+<body class="container-fluid">
+    <header class=" row menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="../multimedia/logo_VN.png" height="150" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="../paginas/finca.html" class="nav-item nav-link">La Finca</a>
+                        <a href="../paginas/nuez.html" class="nav-item nav-link">Nueces</a>
+                        <a href="../paginas/nogal.html" class="nav-item nav-link">El Nogal</a>
+                        <a href="../paginas/nogales_mza.html" class="nav-item nav-link">Nogales en Mendoza</a>
+                        <a href="#" class="nav-item nav-link active">Contacto</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
-        <main>
-            <h1 class="titulo_principal">¡Contactarnos es fácil y rápido!</h1>
-            <section>
-            <p class="parrafo">Completa el formulario de contacto y te enviaremos información detallada acerca de nuestro producto</p>
-            <form class="formulario">
-                <label for="Nombre">Nombre y Apellido</label>
-                <input type="text" name="Nombre">
-                <label for="mail">e-mail</label>
-                <input type="email" name="mail">
-                <label for="telefono">Nro. de Teléfono</label>
-                <input type="number" name="telefono">
-                <label for="mensaje">Ingresa tu consulta</label>
-                <textarea name="mensaje" id="" cols="30" rows="15"></textarea>
-                <input type="submit">
-            </form>
+        <main class="row">
+            <h1 class="titulo_principal col-lg-12 col-md-12 col-sm-12">¡Contactarnos es fácil y rápido!</h1>
+            <section class="row">
+            <p class="parrafo col-lg-12 col-md-12 col-sm-12">Completa el formulario de contacto y te enviaremos información detallada acerca de nuestro producto</p>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-6">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-6">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-6">
+                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-6">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-6">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje." rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
             </section>
-            <section>
-                <h3 class="subtitulo">Datos de Contacto</h3>
-                <article class="parrafo">
+            <section class="row">
+                <h3 class="subtitulo col-lg-12 col-md-12 col-sm-12">Datos de Contacto</h3>
+                <article class="parrafo col-lg-12 col-md-12 col-sm-12">
                     <p> Dir:Ruta Nacional 144, Km 673,5 Cuadro Benegas</p>
                     <p>CP: 5603, San Rafael, Mendoza, Argentina.</p>
                     <p>Tel:2604 662749</p>
                     <p>E-mail: verdenogal@gmail.com</p>
                 </article>
             </section>
-            <footer class="footer">
-                <p>Copyright © 2022 Verde Nogal Nueces </p>
-                <img src="../multimedia/002-facebook.png" alt="Facebook">
-                <img src="../multimedia/003-correo.png" alt="E-mail">
-                <div class="whatsapp">
-                    <a href="https://www.whatsapp.com/?lang=es">
-                    <img src="../multimedia/001-whatsapp.png" alt="whatsapp">
-                    </a>
+            <footer class="footer row">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a href="#" class="fa fa-facebook fa-2x fa-lg"></a>
+              
+                    <!-- Google -->
+                    <a href="#!" class="fa fa-google fa-2x fa-lg"></a>
+              
+                    <!-- Instagram -->
+                    <a href="#!" class="fa fa-instagram fa-2x fa-lg"></a>
+                </section>
+                <!-- Section: Social media -->
                 </div>
-            </footer>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    Copyright © 2022 Verde Nogal Nueces
+                </div>
+                <!-- Copyright -->
+            
+        </footer>
+    </main>
+    <div>
+        <div class="whatsapp">
+            <a href="https://www.whatsapp.com/?lang=es">
+                <img src="../multimedia/001-whatsapp.png" alt="whatsapp">
+            </a>
+        </div>
+        
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         </main>
 
-    </header>
+    
     
 </body>
 </html>
