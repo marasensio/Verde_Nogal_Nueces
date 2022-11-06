@@ -1,0 +1,8 @@
+.googleMaps{
+    text-align: center;
+    iframe{
+        @include sizeMapa(600px , 450px)
+        
+    } 
+
+}

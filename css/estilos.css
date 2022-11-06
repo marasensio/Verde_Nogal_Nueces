@@ -58,7 +58,10 @@ body{
     margin: 30px;
     color: white;
     }
-
+.navbar img{
+    height: 100px 
+}
+/*
 .txt_menu li{
     display: flex;
     margin: 50px;
@@ -70,8 +73,8 @@ body{
 
 .txt_menu a:hover{
     color:#12330a ;
-    
-}
+   
+}*/
 
 /* Footer*/
 
@@ -146,6 +149,7 @@ a{
 
 .fotos{
     margin-left: 60px;
+    overflow:hidden;
 }
 .fotos img{
     width: 400px;
@@ -154,10 +158,16 @@ a{
     
 }
 .fotos img:hover {-webkit-transform:scale(1.4);transform:scale(1.3);}
-.fotos {overflow:hidden;}
+
 .googleMaps{
     text-align: center;
+
 }
+.googleMaps iframe{
+    width: 600px;
+    height: 450px; 
+    
+} 
 
 .tabla{
     border-collapse: collapse;
@@ -206,19 +216,6 @@ a{
 /*Tablet*/
 @media screen and (max-width: 768px) {
         
-    .imagen_logo{
-        width: 50px;
-        height: 50px;
-    }
-        
-    .txt_menu ul{
-        font-size: 12px;
-        
-        }
-    
-    .txt_menu li{
-        margin: 30px;
-    }
     .parrafo{
         font-size: 14px;
     }
@@ -237,15 +234,37 @@ a{
         height: 175px;
         padding: 5px;
     }
+
+    .googleMaps iframe{
+        width: 450px;
+        height: 300px; 
+        
+    } 
     .tabla{
         font-size: 14px;
-        min-width: 250px;
-        margin-left: 300px;
+        min-width: 150px;
+        margin: auto;
+        
     }
+    .nav-item{
+        font-size: 14px;
+        text-align: center;
+        margin: 15px;
+        color:black;
+        font-weight: bold;
+        background-color: rgb(92, 162, 94);
+        }
+    .form-horizontal{
+        margin: auto;
+        }
+    
 } 
 
 /*Celular*/
 @media screen and (max-width: 320px) {
+    .navbar img{
+        height: 50px 
+    }
     .titulo_principal{
         height: 50px;
         font-size: 20px;
@@ -271,15 +290,30 @@ a{
         height: 50px;
         padding: 5px;
     }
+    .googleMaps iframe{
+        width: 300px;
+        height: 150px; 
+        
+    } 
     .tabla{
         font-size: 10px;
         min-width: 80px;
-        margin-left: 50px;
+        margin: auto;
     }
     .googleMaps{
         width: 25px;
         height: 25px;
     }
     
+    .nav-item{
+        font-size: 14px;
+        text-align: center;
+        margin: 15px;
+        color:black;
+        font-weight: bold;
+        }
+    .form-horizontal{
+        margin: auto;
+        }
     
 }

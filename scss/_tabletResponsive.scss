@@ -1,0 +1,45 @@
+/*Tablet*/
+@media screen and (max-width: 768px) {
+        
+    .parrafo{
+        font-size: 14px;
+    }
+    .imgPrincipal{
+        width: $anchoImaPrincipal / 2;
+        height: 250px;
+        padding: 15px;
+    }
+    .imgSecundaria{
+        width: $anchoImaSecundaria / 2;
+        padding: 25px;
+        
+    }
+    .fotos img{
+        width: 200px;
+        height: 175px;
+        padding: 5px;
+    }
+
+    .googleMaps iframe{
+        @include sizeMapa(450px , 300px)
+        
+    } 
+    .tabla{
+        font-size: 14px;
+        min-width: 150px;
+        margin: auto;
+        
+    }
+    .nav-item{
+        font-size: 14px;
+        text-align: center;
+        margin: 15px;
+        color:black;
+        font-weight: bold;
+        background-color: rgb(92, 162, 94);
+        }
+    .form-horizontal{
+        margin: auto;
+        }
+    
+} 

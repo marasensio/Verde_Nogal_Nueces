@@ -1,0 +1,58 @@
+$colorFondo: #ccd5ae;
+$colorRedes: white;
+$fuentePrincipal: 'Montserrat', sans-serif;
+$fuenteTitulo:'Merienda', cursive;
+$anchoImaPrincipal: 500px;
+$anchoImaSecundaria: 300px;
+@mixin sizeMapa ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+    
+@import "general";
+@import "menu";
+@import "footer";
+@import "imagenes";
+@import "mapaGoogle";
+@import "tablas";
+@import "formulario";
+@import "tabletResponsive";
+@import "celularResponsive";
+
+.titulo_principal{
+    background-image:url(../multimedia/mariposas.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    font-family: $fuenteTitulo;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    img{
+        object-fit: cover;
+        padding: 30px;
+        float: left;
+        width:1fr;
+    }
+}
+.subtitulo{
+    font-family: $fuentePrincipal;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.parrafo{
+    font-family: $fuentePrincipal;
+    font-size: 20px;
+    margin: 10px;
+    text-align:justify;
+    li {
+        list-style-type:none;
+        text-align: center;
+    
+    }
+    
+}

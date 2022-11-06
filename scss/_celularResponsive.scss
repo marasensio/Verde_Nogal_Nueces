@@ -1,0 +1,56 @@
+/*Celular*/
+@media screen and (max-width: 320px) {
+    .navbar img{
+        height: 50px 
+    }
+    .titulo_principal{
+        height: 50px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .parrafo{
+        font-size: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .imgPrincipal{
+        width: $anchoImaPrincipal - 380;
+        height: 120px;
+        padding: 8px;
+    }
+    .imgSecundaria{
+        width: $anchoImaSecundaria - 225;
+        padding: 10px;
+        
+    }
+    .fotos img{
+        width: 80px;
+        height: 50px;
+        padding: 5px;
+    }
+    .googleMaps iframe{
+        @include sizeMapa(300px , 150px)
+        
+    } 
+    .tabla{
+        font-size: 10px;
+        min-width: 80px;
+        margin: auto;
+    }
+    .googleMaps{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .nav-item{
+        font-size: 14px;
+        text-align: center;
+        margin: 15px;
+        color:black;
+        font-weight: bold;
+        }
+    .form-horizontal{
+        margin: auto;
+        }
+    
+}

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ccd5ae; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  /*background-color: #a3b18a;*/
+  background: #709668;
+  background: linear-gradient(47deg, #709668 0%, #27aa27 40%, #a3b18a 100%);
+  height: 150px; }
+  .navbar img {
+    height: 100px; }
+
+.nav-item {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px;
+  color: white; }
+
+.footer {
+  background-color: #344e41;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center; }
+
+/* Redes Sociales */
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; }
+  .fa:hover {
+    opacity: 0.7;
+    color: rgba(54, 230, 14, 0.712); }
+
+.fa-facebook, .fa-google, .fa-instagram {
+  color: white; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 50px; }
+  .whatsapp img {
+    width: 40px; }
+
+.imgPrincipal {
+  Display: flex;
+  width: 500px;
+  padding: 30px; }
+
+.imgSecundaria {
+  display: flex;
+  width: 300px;
+  padding: 50px;
+  border-radius: 50%; }
+
+.fotos {
+  margin-left: 60px;
+  overflow: hidden; }
+  .fotos img {
+    width: 400px;
+    height: 350px;
+    padding: 10px; }
+    .fotos img:hover {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.3); }
+
+.googleMaps {
+  text-align: center; }
+  .googleMaps iframe {
+    width: 600px;
+    height: 450px; }
+
+.tabla {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px #344e41;
+  margin-left: 400px; }
+  .tabla tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd; }
+    .tabla tr th, .tabla tr td {
+      padding: 12px 15px; }
+
+.form-horizontal {
+  font-family: "Montserrat", sans-serif;
+  color: #11171c89;
+  font-size: 27px;
+  padding: 10px;
+  margin-left: 300px; }
+
+.bigicon {
+  font-size: 35px;
+  color: #0f1011c5; }
+
+.btn {
+  background-color: #130c0c;
+  border: black; }
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  .parrafo {
+    font-size: 14px; }
+  .imgPrincipal {
+    width: 250px;
+    height: 250px;
+    padding: 15px; }
+  .imgSecundaria {
+    width: 150px;
+    padding: 25px; }
+  .fotos img {
+    width: 200px;
+    height: 175px;
+    padding: 5px; }
+  .googleMaps iframe {
+    width: 450px;
+    height: 300px; }
+  .tabla {
+    font-size: 14px;
+    min-width: 150px;
+    margin: auto; }
+  .nav-item {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+    background-color: #5ca25e; }
+  .form-horizontal {
+    margin: auto; } }
+
+/*Celular*/
+@media screen and (max-width: 320px) {
+  .navbar img {
+    height: 50px; }
+  .titulo_principal {
+    height: 50px;
+    font-size: 20px;
+    padding-top: 10px; }
+  .parrafo {
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px; }
+  .imgPrincipal {
+    width: 120px;
+    height: 120px;
+    padding: 8px; }
+  .imgSecundaria {
+    width: 75px;
+    padding: 10px; }
+  .fotos img {
+    width: 80px;
+    height: 50px;
+    padding: 5px; }
+  .googleMaps iframe {
+    width: 300px;
+    height: 150px; }
+  .tabla {
+    font-size: 10px;
+    min-width: 80px;
+    margin: auto; }
+  .googleMaps {
+    width: 25px;
+    height: 25px; }
+  .nav-item {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px;
+    color: black;
+    font-weight: bold; }
+  .form-horizontal {
+    margin: auto; } }
+
+.titulo_principal {
+  background-image: url(../multimedia/mariposas.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Merienda", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px; }
+  .titulo_principal img {
+    object-fit: cover;
+    padding: 30px;
+    float: left;
+    width: 1fr; }
+
+.subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px; }
+
+.parrafo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  text-align: justify; }
+  .parrafo li {
+    list-style-type: none;
+    text-align: center; }
