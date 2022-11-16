@@ -129,8 +129,8 @@ a {
     width: 150px;
     padding: 25px; }
   .fotos img {
-    width: 200px;
-    height: 175px;
+    width: 300px;
+    height: 275px;
     padding: 5px; }
   .googleMaps iframe {
     width: 450px;
@@ -169,8 +169,8 @@ a {
     width: 75px;
     padding: 10px; }
   .fotos img {
-    width: 80px;
-    height: 50px;
+    width: 180px;
+    height: 150px;
     padding: 5px; }
   .googleMaps iframe {
     width: 300px;
@@ -211,6 +211,7 @@ a {
 .subtitulo {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
+  font-weight: bold;
   text-align: center;
   padding: 10px;
   margin: 10px; }
@@ -219,7 +220,17 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   margin: 10px;
-  text-align: justify; }
+  text-align: justify;
+  padding: 30px; }
   .parrafo li {
     list-style-type: none;
     text-align: center; }
+
+.resalta {
+  color: #1bab52;
+  font-weight: bold;
+  font-style: italic; }
+
+.resaltados {
+  color: #766d6d;
+  font-style: italic; }

@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<!-- Menú -->
 <body class="container-fluid">
     <header class="row menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,57 +43,68 @@
             </div>
         </nav>
     </header>
+    <!--Título Principal-->
     <main class="row"> 
         <h1 class="titulo_principal col-lg-12 col-md-12 col-sm-12">Nueces Chandler</h1>
         <section class="intro row">
             <img src="multimedia/nuez_verde.jpg" alt="Nuez verde" class="col-sm-12 col-md-6 col-lg-6 imgPrincipal">
             <p class="parrafo col-sm-12 col-md-6 col-lg-6">Somos una empresa familiar con más de 50 años de experiencia 
-            en la producción de nuez Chandler. Tenemos como objetivo diferenciar
+            en la producción de <span class="resalta"> nuez Chandler</span>. Tenemos como objetivo diferenciar
             nuestro producto en un mercado competitivo y cada véz más exigente,
             mediante los más altos estándares de calidad.
             La variedad Chandler es de origen Californiano, resalta por su cascara blanda y pulpa de color 
-            claro, de sabor suave y agradable. El consumo de este fruto aporta
-            innumerables beneficios al organismo, a través de su alto 
-            contenido en proteínas, vitaminas, aminoácidos y aceites.</p>
+            claro, de sabor suave y agradable. </p>
         </section>
-        
-            <article class="row">
-                <h3 class="subtitulo col-lg-12 col-md-12 col-sm-12">La Plantación</h3>
-                <img src="multimedia/finca.jpg" alt="Finca" class="imgSecundaria col-lg-5 col-md-5 col-sm-5">
-                <p class="parrafo col-lg-7 col-md-7 col-sm-7">Toda la finca ha sido plantada con la variedad Chandler
-                y está protegida con tela antigranizo. El riego se realiza por superficie.
-                Actualmente estamos realizando el control de plagas mediante biocontrol.
-                </p>
-            </article>
-            <article class="row">
-                <h3 class="subtitulo col-lg-12 col-md-12 col-sm-12">El Proceso</h3>
-                <img src="multimedia/bolsas_nez.JPG" alt="bolsas de nuez" class="imgSecundaria col-lg-5 col-md-5 col-sm-5">
-                <p class="parrafo col-lg-7 col-md-7 col-sm-7">Nos encargamos tanto de la producción como de la cosecha, la cual
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+            <div class="card h-100">
+                <img src="multimedia/finca.jpg" class="card-img-top" alt="plantación de nogales">
+                <div class="card-body">
+                <h3 class="card-title subtitulo">La Plantación</h3>
+                <p class="card-text parrafo">Toda la finca ha sido plantada con la variedad Chandler
+                    y está protegida con tela antigranizo. El riego se realiza por superficie.
+                    Actualmente estamos realizando el control de plagas mediante biocontrol.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100">
+                <img src="multimedia/bolsas_nez.JPG" class="card-img-top" alt="bolsas de nueces">
+                <div class="card-body">
+                <h3 class="card-title subtitulo">El Proceso</h3>
+                <p class="card-text parrafo">Nos encargamos tanto de la producción como de la cosecha, la cual
                 se realiza manualmente al igual que el despelonado. El secado se lleva
-                a cabo de forma natural, es decir, secado al sol. La producción se almacena en bolsas caladas.
-                </p>
-            </article>
-            <article class="row">
-                <h3 class="subtitulo col-lg-12 col-md-12 col-sm-12">El Producto</h3>
-                <img src="multimedia/mariposas.jpg" alt="nueces peladas" class="imgSecundaria col-lg-5 col-md-5 col-sm-5">
-                <p class="parrafo col-lg-7 col-md-7 col-sm-7">La nuez pelada o pulpa se selecciona y se envasa en cajas de 
-                4 kg. las cuales vendemos y distribuímos en todo el país. 
-                </p>
-            </article>
-            <article class="row">
-                <ul class="parrafo col-lg-12 col-md-12 col-sm-12">
-                    <li>Mariposa Extra Light</li>
-                    <li>Mariposa Light</li>
-                    <li>Mariposa ámbar</li>
-                    <li>Mariposa oscura</li>
-                    <li>Cuartos Estra Light</li>
+                a cabo de forma natural, es decir, secado al sol. La producción se almacena en bolsas caladas.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100">
+                <img src="multimedia/mariposas.jpg" class="card-img-top" alt="nueces peladas">
+                <div class="card-body">
+                <h3 class="card-title subtitulo">El Producto</h3>
+                <p class="card-text parrafo">a nuez pelada o pulpa se selecciona y se envasa en cajas de 
+                    4 kg. las cuales vendemos y distribuímos en todo el país.</p>
+                </div>
+                <ul class="list-group list-group-flush parrafo">
+                    <li class="list-group-item">Mariposa Extra Light</li>
+                    <li class="list-group-item">Mariposa Light</li>
+                    <li class="list-group-item">Mariposa ámbar</li>
+                    <li class="list-group-item">Mariposa oscura</li>
+                    <li class="list-group-item">Cuartos Estra Light</li>
                 </ul>
-                
-            </article>
+            </div>
+            
+            </div>
+            
+            </div>
+
      
         
 
     </main>
+    <!--Footer-->
         <div>
             <footer class="footer row">
             <!-- Grid container -->
@@ -119,6 +131,7 @@
             <!-- Copyright -->
         
     </footer>
+    <!--Whatsapp-->
     <div class="whatsapp">
         <a href="https://www.whatsapp.com/?lang=es">
             <img src="multimedia/001-whatsapp.png" alt="whatsapp">
